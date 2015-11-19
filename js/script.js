@@ -1,27 +1,31 @@
-var app = angular.module('catdog', ['ngRoute']);
+var app = angular.module('catDog', ['ngRoute']);
 
-app.config(function($routeProvider) {
-	$routeProvider.when('/', {
-		templateUrl: 'views/partial1.html',
-		controller: 'routeCtrl'
-	});
+app.config(function($routeProvider){
+  $routeProvider.when('/', {
+    templateUrl: '/views/dog.html',
+    controller: 'routeCtrl'
+  });
+  
+  $routeProvider.when('/', {
+    templateUrl: '/views/charlie.html',
+    controller: 'routeCtrl'
+  });
 
-	$routeProvider.when('/view2', {
-		templateUrl: 'views/partial2.html',
-		controller: 'routeCtrl'
-	});
+  $routeProvider.when('/', {
+    templateUrl: '/views/cat.html',
+    controller: 'routeCtrl'
+  });
 
-	$routeProvider.when('/view2', {
-		templateUrl: 'views/partial3.html',
-		controller: 'routeCtrl'
-	});
+  $routeProvider.when('/', {
+    templateUrl: '/views/lambchop.html',
+    controller: 'routeCtrl'
+  });
 
-	$routeProvider.when('/view2', {
-		templateUrl: 'views/partial4.html',
-		controller: 'routeCtrl'
-	});
+  $routeProvider.otherwise( { 
+  	redirectTo: '/' });
+
 });
 
-app.controller('routeCtrl', function() {
-
+app.controller('routeCtrl', function(){
+  
 });

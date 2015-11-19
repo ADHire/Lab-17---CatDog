@@ -1,30 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>CatDog!</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-	<header>
-		<h1>A glorious time for us all!</h1>
-		<div class="nav">
-			<ul>
-				<li><a href="#/views/partial1">FrankerZ</a></li>
-				<li><a href="#/views/partial2">Felix</a></li>
-				<li><a href="#/views/partial3">Charlie</a></li>
-				<li><a href="#/views/partial4">Lambchop</a></li>
-			</ul>
-		</div>
+<html>
+  <head>
+    <link href="css/main.css" />
+  </head>
 
-	</header>
-
-	<div ng-view="">
-	</div>
-	
-
-	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/route.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-</body>
+  <body ng-app="catDog">
+    <h2>Welcome!!</h2>
+    <a href="/views/dog">dog</a>
+    <a href="/views/cat">cat</a>
+    <a href="/views/charlie">charlie</a>
+    <a href="/views/lambchop">lambchop</a>
+    <div ng-view=""></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
