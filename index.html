@@ -6,9 +6,25 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+	<header>
+		<h1>A glorious time for us all!</h1>
+		<div class="nav">
+			<ul>
+				<li><a href="#/views/partial1">FrankerZ</a></li>
+				<li><a href="#/views/partial2">Felix</a></li>
+				<li><a href="#/views/partial3">Charlie</a></li>
+				<li><a href="#/views/partial4">Lambchop</a></li>
+			</ul>
+		</div>
+
+	</header>
+
+	<div ng-view="">
+	</div>
 	
 
 	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/route.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
