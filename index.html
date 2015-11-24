@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/main.css" />
+    <link rel='stylesheet' type="text/css" href="css/style.css">
   </head>
 
   <body ng-app="catDog">
-    <h2>Welcome!!</h2>
-    <a href="/views/dog">dog</a>
-    <a href="/views/cat">cat</a>
-    <a href="/views/charlie">charlie</a>
-    <a href="/views/lambchop">lambchop</a>
-    <div ng-view=""></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+    <div class="heading">
+      <h2>Welcome!!</h2>
+      <ul>
+        <li><a href="#/dog"><button>dog</button></a></li>
+        <li><a href="#/cat"><button>cat</button></a></li>
+        <li><a href="#/charlie"><button>charlie</button></a></li>
+        <li><a href="#/lambchop"><button>lambchop</button></a></li>
+        <li><a href="#/turtle"><button>turtle</button></a></li>
+      </ul>
+    </div>
+    <div class="picture" ng-view=""></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
     <script src="js/script.js"></script>
   </body>

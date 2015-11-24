@@ -1,0 +1,36 @@
+body {
+	background-color: #f72832;
+	color: white;
+	text-align: center;
+	font-family: Comic Sans MS;
+}
+
+li {
+	list-style: none;
+	display: inline;
+}
+
+button {
+	background-color: #8528f7;
+	color: #28f7ed;
+	text-decoration: none;
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	font-family: Comic Sans MS;
+	border: 2px solid #9af728;
+}
+
+.heading {
+	margin: 0 auto;
+	width: 100%;
+}
+
+h2 {
+	font-size: 50px;
+	color: #9af728;
+}
+
+.picture {
+	margin: 200px auto;
+}
